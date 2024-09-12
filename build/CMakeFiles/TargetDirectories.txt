@@ -1,0 +1,3 @@
+/Users/maxross/murmmer/build/CMakeFiles/BirdMurmuration.dir
+/Users/maxross/murmmer/build/CMakeFiles/edit_cache.dir
+/Users/maxross/murmmer/build/CMakeFiles/rebuild_cache.dir

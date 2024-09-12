@@ -1,0 +1,22 @@
+cmake_minimum_required(VERSION 3.12)
+project(BirdMurmuration)
+
+set(CMAKE_CXX_STANDARD 17)
+
+find_package(OpenGL REQUIRED)
+find_package(glfw3 REQUIRED)
+find_package(glm REQUIRED)
+
+find_library(OPENAL_LIBRARY OpenAL)
+set(OPENAL_INCLUDE_DIR "/System/Library/Frameworks/OpenAL.framework/Headers")
+
+include_directories(${OPENGL_INCLUDE_DIRS} ${GLFW_INCLUDE_DIRS} ${GLM_INCLUDE_DIRS} ${OPENAL_INCLUDE_DIR})
+
+add_executable(BirdMurmuration main.cpp)
+
+target_link_libraries(BirdMurmuration 
+    ${OPENGL_LIBRARIES}
+    glfw
+    ${GLM_LIBRARIES}
+    ${OPENAL_LIBRARY}
+)
